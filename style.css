@@ -1,0 +1,403 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #1e0303;
+  margin: 0;
+  padding: 30px 20px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+/* CV PAPER */
+.cv {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 50px 60px;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER */
+header {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #c89d48;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: #555555;
+}
+
+.contact span {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* SECTIONS & HEADINGS */
+section,
+.resume-section {
+  margin-top: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #c89d48;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #c89d48;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* GENERAL TEXT & LISTS */
+p {
+  line-height: 1.7;
+  font-size: 14px;
+  color: #444444;
+  text-align: justify;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.resume-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.resume-section li strong {
+  color: #1a1a1a;
+}
+
+/* GRID SYSTEM (SKILLS) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* TIMELINE (EDUCATION) */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+.timeline .item span:first-child {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.timeline .item span:last-child {
+  font-weight: 600;
+  color: #666666;
+}
+
+/* TAB NAVIGATION (TOMBOL PILIHAN) */
+.tab-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 8px;
+}
+
+.tab-btn {
+  background: none;
+  border: 1px solid #cccccc;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background-color: #f7f7f7;
+}
+
+.tab-btn.active {
+  background-color: #c89d48 !important;
+  color: #ffffff !important;
+  border-color: #c89d48 !important;
+}
+
+/* MENAMPILKAN / MENYEMBUNYIKAN KONTEN TAB */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active,
+.tab-content.show-active {
+  display: block !important;
+}
+
+/* ACHIEVEMENTS */
+.achievement {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.achievement .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.achievement .item span:first-child {
+  position: relative;
+  padding-left: 16px;
+  color: #333333;
+}
+
+/* Custom Bullet Point */
+.achievement .item span:first-child::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c89d48;
+  font-size: 18px;
+  top: -2px;
+}
+
+.achievement .item span:last-child {
+  min-width: 75px;
+  text-align: right;
+  font-weight: 600;
+  color: #666666;
+  white-space: nowrap;
+}
+
+/* Layout Grid untuk Proyek */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 15px;
+}
+
+/* Tampilan Kartu Proyek */
+.project-card {
+  background: #fafafa;
+  border-left: 4px solid #c89d48;
+  padding: 14px 18px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  color: #222;
+  font-weight: 700;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Layout Rapi untuk Organisasi */
+.org-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.org-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: #fafafa;
+  border-left: 3px solid #c89d48;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.org-item span:first-child {
+  color: #222;
+  font-weight: 500;
+}
+
+.org-item span:last-child {
+  color: #666;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+/* Layout Grid 2 Kolom untuk Kepanitiaan */
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px 16px;
+  margin-top: 12px;
+}
+
+.committee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #fafafa;
+  border-left: 3px solid #c89d48;
+  border-radius: 4px;
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+.committee-item span:first-child {
+  color: #222;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.committee-item span:last-child {
+  color: #666;
+  font-weight: 600;
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+/* MEDIA QUERIES (RESPONSIVE HP) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .cv {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .timeline .item,
+  .org-item,
+  .committee-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .achievement .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .achievement .item span:last-child {
+    text-align: left;
+    padding-left: 16px;
+    font-size: 13px;
+    color: #888888;
+  }
+
+  .tab-nav {
+    flex-wrap: wrap;
+  }
+}
+
+/* PRINT MODE */
+@media print {
+  body {
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .cv {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  button,
+  .tab-nav {
+    display: none !important;
+  }
+
+  .tab-content {
+    display: block !important;
+  }
+}

@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Assya Nurhasanah</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CSS KHUSUS TOMBOL TAB -->
+    <style>
+      .tab-nav {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 16px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+      }
+
+      .tab-btn {
+        background-color: #ffffff;
+        border: 1px solid #c89d48;
+        color: #c89d48;
+        padding: 8px 16px;
+        font-size: 13.5px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .tab-btn:hover {
+        background-color: #fcf8f0;
+      }
+
+      .tab-btn.active {
+        background-color: #c89d48 !important;
+        color: #ffffff !important;
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content.show-active {
+        display: block !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cv">
+      <!-- HEADER -->
+      <header>
+        <h1>ASSYA NURHASANAH</h1>
+        <p class="subtitle">
+          Student of Mechatronics and Artificial Intelligence | Karate Referee |
+          Karate Coach | Karate Athlete
+        </p>
+        <div class="contact">
+          <span>📞 08987491731</span>
+          <span> 🅾 @nurhasanahassya</span>
+          <span>✉️ assyanurhasanah456@gmail.com</span>
+          <span>🌐 linkedin.com/in/assya-nurhasanah</span>
+        </div>
+      </header>
+
+      <!-- SUMMARY -->
+      <section>
+        <h2>SUMMARY</h2>
+        <p>
+          Born in Karawang on November 13, 2005, I am a student majoring in
+          Mechatronics and Artificial Intelligence at Universitas Pendidikan
+          Indonesia with a strong interest in developing intelligent systems and
+          technology as solutions to real-world challenges. I continuously
+          enhance my skills through various academic and organizational
+          experiences. In addition, I am actively involved as both an athlete
+          and a coach in the field of martial arts, which has strengthened my
+          leadership, discipline, and collaborative skills.
+        </p>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="grid">
+        <div>
+          <h2>HARD SKILLS</h2>
+          <ul>
+            <li>HTML & CSS Development</li>
+            <li>Javascript Programming Language</li>
+            <li>Database Design and Administration (MySQL)</li>
+            <li>Data Analysis and Interpretation</li>
+            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+            <li>Photography and Camera Handling</li>
+            <li>Musical Instrument Proficiency</li>
+            <li>Karate Techniques and Martial Arts Training</li>
+            <li>Martial Arts Refereeing and Coaching</li>
+          </ul>
+        </div>
+        <div>
+          <h2>SOFT SKILLS</h2>
+          <ul>
+            <li>Effective Communication</li>
+            <li>Teamwork and Collaboration</li>
+            <li>Time Management</li>
+            <li>Problem Solving</li>
+            <li>Leadership</li>
+            <li>Adaptability</li>
+            <li>Critical Thinking</li>
+            <li>Decision Making</li>
+            <li>Interpersonal Skills</li>
+            <li>Discipline and Mental Toughness</li>
+            <li>Public Speaking</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section>
+        <h2>LANGUAGE</h2>
+        <ul>
+          <li>Indonesia (Active)</li>
+          <li>English (Basic)</li>
+          <li>Japanese (Basic/Conversational)</li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <h2>EDUCATION</h2>
+        <div class="timeline">
+          <div class="item">
+            <span>SD Negeri Dawuan Tengah VI</span><span>(2012–2018)</span>
+          </div>
+          <div class="item">
+            <span>SMP Negeri 5 Klari</span><span>(2019–2021)</span>
+          </div>
+          <div class="item">
+            <span>SMA Negeri 2 Cikampek</span><span>(2022–2024)</span>
+          </div>
+          <div class="item">
+            <span>Universitas Pendidikan Indonesia</span
+            ><span>(2024–Present)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS & COMPETITIVE EXPERIENCE -->
+      <section>
+        <h2>ACHIEVEMENT</h2>
+
+        <!-- Navigasi Tombol Pilihan -->
+        <div class="tab-nav">
+          <button class="tab-btn active" onclick="openTab(event, 'tab-all')">
+            All Achievements
+          </button>
+          <button class="tab-btn" onclick="openTab(event, 'tab-karate')">
+            Karate & Athletics
+          </button>
+          <button class="tab-btn" onclick="openTab(event, 'tab-academic')">
+            Academic & Others
+          </button>
+        </div>
+
+        <!-- TAB 1: ALL ACHIEVEMENTS -->
+        <div id="tab-all" class="tab-content" style="display: block">
+          <div class="achievement">
+            <div class="item">
+              <span>Juara 1 O2SN Karate Tingkat Kecamatan</span
+              ><span>(2017)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 3 Kejuaraan Karate Antar Pelajar Tingkat Kabupaten</span
+              ><span>(2018)</span>
+            </div>
+            <div class="item">
+              <span>Juara 3 Olimpiade Matematika Tingkat Provinsi</span
+              ><span>(2019)</span>
+            </div>
+            <div class="item">
+              <span>Juara 2 Photography Tingkat Provinsi</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist of the Divya Competition 2.0 in the field of history
+                at the provincial level</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Divya 2.0 competition in the field of Chemistry
+                at the provincial level</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Physics division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Mathematics division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Biology division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Indonesian-language division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalists of the cover song contest at the provincial level
+                Japanese Language and Culture Festival (BUNGKASAI)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >3rd Place Winner of the National Science and Japanese Language
+                Olympiad</span
+              ><span>(2024)</span>
+            </div>
+            <div class="item">
+              <span
+                >Best Graduate Award – Black Belt Examination, Bandung Karate
+                Club (BKC) Karawang Regency</span
+              ><span>(2024)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 1 KUMITE PUTRI UNSIKA INTERNATIONAL KARATE
+                CHAMPIONSHIP</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 2 KUMITE PUTRI YASPI NATIONAL OPEN KARATE CHAMPIONSHIP
+                SERIES 3</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 2 KATA PERORANGAN PUTRI UPI KARATE CUP V NATIONAL</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span>Juara 2 KUMITE UPI KARATE CUP V NATIONAL</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 1 KUMITE Kejuaraan Nasional STKIP PASUNDAN OPEN
+                TOURNAMENT</span
+              ><span>(2026)</span>
+            </div>
+            <div class="item">
+              <span>2ND PLACE WINNER SENIOR KUMITE +68KG FEMALE TOURNAMENT</span
+              ><span>(2026)</span>
+            </div>
+            <div class="item">
+              <span
+                >BEST OF THE BEST 2ND PLACE WINNER SENIOR KUMITE +68KG FEMALE
+                TOURNAMENT</span
+              ><span>(2026)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 3 Buku Dongeng Digital Gebyar PGPAUD UPI Purwakarta</span
+              ><span>(2026)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: KARATE & ATHLETICS -->
+        <div id="tab-karate" class="tab-content" style="display: none">
+          <div class="achievement">
+            <div class="item">
+              <span>Juara 1 O2SN Karate Tingkat Kecamatan</span
+              ><span>(2017)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 3 Kejuaraan Karate Antar Pelajar Tingkat Kabupaten</span
+              ><span>(2018)</span>
+            </div>
+            <div class="item">
+              <span
+                >Best Graduate Award – Black Belt Examination, Bandung Karate
+                Club (BKC) Karawang Regency</span
+              ><span>(2024)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 1 KUMITE PUTRI UNSIKA INTERNATIONAL KARATE
+                CHAMPIONSHIP</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 2 KUMITE PUTRI YASPI NATIONAL OPEN KARATE CHAMPIONSHIP
+                SERIES 3</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 2 KATA PERORANGAN PUTRI UPI KARATE CUP V NATIONAL</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span>Juara 2 KUMITE UPI KARATE CUP V NATIONAL</span
+              ><span>(2025)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 1 KUMITE Kejuaraan Nasional STKIP PASUNDAN OPEN
+                TOURNAMENT</span
+              ><span>(2026)</span>
+            </div>
+            <div class="item">
+              <span>2ND PLACE WINNER SENIOR KUMITE +68KG FEMALE TOURNAMENT</span
+              ><span>(2026)</span>
+            </div>
+            <div class="item">
+              <span
+                >BEST OF THE BEST 2ND PLACE WINNER SENIOR KUMITE +68KG FEMALE
+                TOURNAMENT</span
+              ><span>(2026)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: ACADEMIC & OTHERS -->
+        <div id="tab-academic" class="tab-content" style="display: none">
+          <div class="achievement">
+            <div class="item">
+              <span>Juara 3 Olimpiade Matematika Tingkat Provinsi</span
+              ><span>(2019)</span>
+            </div>
+            <div class="item">
+              <span>Juara 2 Photography Tingkat Provinsi</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist of the Divya Competition 2.0 in the field of history
+                at the provincial level</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Divya 2.0 competition in the field of Chemistry
+                at the provincial level</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Physics division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Mathematics division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Biology division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalist in the Physics category at the National Science &
+                Social Competition 1.0 (Indonesian-language division)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >Finalists of the cover song contest at the provincial level
+                Japanese Language and Culture Festival (BUNGKASAI)</span
+              ><span>(2021)</span>
+            </div>
+            <div class="item">
+              <span
+                >3rd Place Winner of the National Science and Japanese Language
+                Olympiad</span
+              ><span>(2024)</span>
+            </div>
+            <div class="item">
+              <span
+                >Juara 3 Buku Dongeng Digital Gebyar PGPAUD UPI Purwakarta</span
+              ><span>(2026)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT -->
+      <section class="resume-section">
+        <h2>PROJECT</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Digital Invitation & Guestbook Web Application</h3>
+            <p><strong>Role:</strong> Personal Project / Freelance</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Interactive Digital Storybook Web Application</h3>
+            <p><strong>Role:</strong> Personal Project / Freelance</p>
+          </div>
+
+          <div class="project-card">
+            <h3>
+              Smart Tank Filling System with Dry-Run and Overflow Protection
+            </h3>
+            <p><strong>Category:</strong> Internet of Things (IoT)</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Interactive Digital Storybook Web Application</h3>
+            <p><strong>Category:</strong> Web Development</p>
+          </div>
+
+          <div class="project-card">
+            <h3>IoT-Based Smart Home Security Alarm System</h3>
+            <p><strong>Category:</strong> Internet of Things (IoT)</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Digital Alarm Clock</h3>
+            <p>
+              Designed and developed a digital alarm clock system to improve
+              understanding of embedded systems, electronic components, and
+              time-based automation.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Arduino-Based Calculator</h3>
+            <p>
+              Built a calculator prototype using Arduino to strengthen
+              programming logic, hardware–software integration, and
+              problem-solving skills.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Technology-Based Learning Media Development</h3>
+            <p>
+              Developed interactive visual learning media for elementary
+              students to support engaging science learning.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>AI-Based Physical Rehabilitation Robot</h3>
+            <p>
+              Co-authored a scientific paper exploring AI in physical
+              rehabilitation robots to improve therapy effectiveness.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Moontime – Menstrual Cycle Tracking Application</h3>
+            <p>
+              Developed a menstrual cycle tracking application with predictions
+              and health recommendations.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Scratch Game Development</h3>
+            <p>
+              Designed and developed a simple game using Scratch to strengthen
+              computational thinking and creativity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ORGANIZATION -->
+      <section class="resume-section">
+        <h2>ORGANIZATION</h2>
+        <div class="org-list">
+          <div class="org-item">
+            <span>Badan Eksekutif Mahasiswa UPI Purwakarta</span
+            ><span>(2026)</span>
+          </div>
+          <div class="org-item">
+            <span>Karya Salemba Empat</span><span>(2026)</span>
+          </div>
+          <div class="org-item">
+            <span>HIMATRONIKA-AI</span><span>(2024–Present)</span>
+          </div>
+          <div class="org-item">
+            <span>Kumpulan Barudak Seni UPI Purwakarta</span
+            ><span>(2025–Present)</span>
+          </div>
+          <div class="org-item">
+            <span>Forum Mahasiswa Karawang UPI</span><span>(2024–2025)</span>
+          </div>
+          <div class="org-item">
+            <span>Pelita Intan Muda Karawang</span><span>(2024–2025)</span>
+          </div>
+          <div class="org-item">
+            <span>Majelis Sabuk Hitam Bandung Karate Club</span
+            ><span>(2024–Present)</span>
+          </div>
+          <div class="org-item">
+            <span>Komunitas Bahasa Jepang</span><span>(2021–2024)</span>
+          </div>
+          <div class="org-item">
+            <span>Angklung Community</span><span>(2021–2024)</span>
+          </div>
+          <div class="org-item">
+            <span>Jurnalistik SMAN 2 Cikampek</span><span>(2021–2023)</span>
+          </div>
+          <div class="org-item">
+            <span>Komunitas Bahasa Inggris SMAN 2 Cikampek</span
+            ><span>(2021–2023)</span>
+          </div>
+          <div class="org-item">
+            <span>Bandung Karate Club</span><span>(2016–Present)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ORGANIZATIONAL EXPERIENCE -->
+      <section class="resume-section">
+        <h2>ORGANIZATIONAL EXPERIENCE</h2>
+        <div class="org-list">
+          <div class="org-item">
+            <span>Bendahara Kementerian Minat dan Bakat BEM UPI Purwakarta</span
+            ><span>(2026)</span>
+          </div>
+          <div class="org-item">
+            <span>Staf BEM UPI Purwakarta</span><span>(2026)</span>
+          </div>
+          <div class="org-item">
+            <span>Ketua Departemen Litbang – KUBUS UPI</span
+            ><span>(2025–Present)</span>
+          </div>
+          <div class="org-item">
+            <span>Ketua Departemen – HIMATRONIKA-AI</span
+            ><span>(2025–Present)</span>
+          </div>
+          <div class="org-item">
+            <span>Staf PSDM – HIMATRONIKA-AI</span><span>(2024/2025)</span>
+          </div>
+          <div class="org-item">
+            <span>Sekretaris – Pelita Intan Muda Kabupaten Karawang</span
+            ><span>(2025)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMITTEE AND LEADERSHIP EXPERIENCE -->
+      <section class="resume-section">
+        <h2>COMMITTEE AND LEADERSHIP EXPERIENCE</h2>
+        <div class="committee-grid">
+          <div class="committee-item">
+            <span
+              >Ketua Divisi Hubungan Masyarakat – ISOLA Academy Karya Salemba
+              Empat</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Steering Committee Lantera x Reseital – KUBUS UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Steering Committee Diesnatalis – KUBUS UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Narahubung – Roadshow Karya Salemba Empat</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Pemateri Webinar – Sekolah Kesejahteraan Mahasiswa</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Pengawas Arsitek Pengabdian Trisula</span><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Wakil Ketua Pelaksana – Goes to School FAWANG UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Koordinator Hubungan Masyarakat – FAWANG Impact</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Ketua Tim – International Karate Esa Unggul CHAMPIONSHIP</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span
+              >Ketua Tim – Kompetisi Karate STKIP Pasundan Tingkat
+              Nasional</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Ketua Tim – Lomba Seni dan Kreasi UPI Purwakarta</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Steering Committee – Pembekalan × Buka Bersama KUBUS UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Steering Committee – Lentera × Resital KUBUS UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Steering Committee – Dies Natalis KUBUS UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Koordinator Bendahara – Laksana Festival</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span
+              >Koordinator Lapangan dan Logistik – Studi Banding FAWANG
+              UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Ketua Pelaksana – Dies Natalis KUBUS UPI</span
+            ><span>(2026)</span>
+          </div>
+          <div class="committee-item">
+            <span>Wakil Koordinator Keamanan – POSPEK UPI</span
+            ><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span>Staf Guardian – Pancarayu UPI</span><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span>Staf Keamanan – MOKAKU UPI</span><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span>Staf Guardian – METASTRO HIMATRONIKA-AI</span
+            ><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span>Sekretaris – MUBUS UPI</span><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span
+              >Staf Koordinator Lapangan dan Logistik – Resital KUBUS UPI</span
+            ><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span
+              >Koordinator Lapangan dan Logistik – Makrab × Buka Bersama KUBUS
+              UPI</span
+            ><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span>Staf Acara – Goes to School FAWANG UPI</span
+            ><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span>Sekretaris – Pelita Intan Muda Mengabdi</span
+            ><span>(2025)</span>
+          </div>
+          <div class="committee-item">
+            <span>Koordinator Bendahara – RAYAKARYA HIMATRONIKA-AI</span
+            ><span>(2025)</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SCRIPT JAVASCRIPT UNTUK MEMANIPULASI TAMPILAN TAB -->
+    <script>
+      function openTab(evt, tabId) {
+        // 1. Sembunyikan semua konten tab
+        var contents = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].style.display = "none";
+        }
+
+        // 2. Hilangkan kelas active dari semua tombol tab
+        var buttons = document.getElementsByClassName("tab-btn");
+        for (var j = 0; j < buttons.length; j++) {
+          buttons[j].classList.remove("active");
+        }
+
+        // 3. Tampilkan tab yang dipilih
+        var selectedTab = document.getElementById(tabId);
+        if (selectedTab) {
+          selectedTab.style.display = "block";
+        }
+
+        // 4. Aktifkan warna pada tombol yang sedang diklik
+        if (evt && evt.currentTarget) {
+          evt.currentTarget.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>
